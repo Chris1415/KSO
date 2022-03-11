@@ -6,7 +6,7 @@ var _boxever_settings = {
 	client_key: 'sise1eunua85o8xcud0kedjg1clno632', // Replace with your client key
 	target: 'https://api.boxever.com/v1.2', // Replace with your API target endpoint specific to your data center region
 	cookie_domain: '*.ch-ha-kso-cm.sitecoredemo.com/', // Replace with the top level cookie domain of the website that is being integrated e.g ".example.com" and not "www.example.com"
-	pointOfSale: "Demo",  // Replace with your POS
+	pointOfSale: "sse1eu.com",  // Replace with your POS
 	web_flow_target: "https://d35vb5cccm4xzp.cloudfront.net",
 };
 
@@ -36,7 +36,7 @@ function View() {
 		"language": "EN",
 		"currency": "EUR",
 		"page": window.location.pathname + window.location.search,
-		"pos": "Demo",  // Replace with your POS
+		"pos": "sse1eu.com",  // Replace with your POS
 		"session_data": {
 			"uri": window.location.pathname
 		}
