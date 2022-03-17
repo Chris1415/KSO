@@ -1,17 +1,3 @@
-// *********************************
-// CONSTS
-// *********************************
-const SITECORECDP_CLIENT_KEY = "sise1eunua85o8xcud0kedjg1clno632";
-const SITECORECDP_CLIENT_SECRET = "1DLkYg0FGzW2UMh5TQkDJl9HoYmwlstk";
-const SITECORECDP_REST_API_BASIC_AUTH = "Basic sise1eunua85o8xcud0kedjg1clno632:sise1eunua85o8xcud0kedjg1clno632";
-const SITECORECDP_POINT_OF_SALE = "sse1eu.com";
-const SITECORECDP_API_TARGET = "https://api.boxever.com/v1.2"; //  do not change
-const SITECORECDP_WEB_FLOW_TARGET = "https://d35vb5cccm4xzp.cloudfront.net"; //  do not change
-const SITECORECDP_JS_LIB_SRC = "https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.1.min.js"; //  do not change
-const SITECORECDP_COOKIE_DOMAIN = 'https://ch-ha-kso.sitecoredemo.com/'; //replace TLD with your client/prospect
-const IDENTITY_PROVIDER = "SITECORE_ID"; // also placeholder
-const CURRENCY = "EUR";
-
 // Mapping -> Ascii to Key
 const A = 65;const B = 66;const C = 67;const D = 68;const E = 69;const F = 70;const G = 71;const H = 72;const I = 73;const J = 74;const K = 75;const L = 76;const M = 77;const N = 78;const O = 79;const P = 80;const Q = 81;const R = 82;const S = 83;const T = 84;const U = 85;const V = 86;const W = 87;const X = 88;const Y = 89;const Z = 90;
 
