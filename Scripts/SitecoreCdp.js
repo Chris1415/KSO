@@ -16,11 +16,6 @@ window._boxever_settings = {
 	web_flow_target: SITECORECDP_WEB_FLOW_TARGET,
 };
 
-loadScCdpLib();
-if (SEND_VIEW_EVENT) {
-	delayUntilBrowserIdIsAvailable(View);
-}
-
 function loadScCdpLib(callback) {
 	console.log('Sitecore CDP Tampermonkey script - loadScCdpLib');
 	var scriptElement = document.createElement('script');
