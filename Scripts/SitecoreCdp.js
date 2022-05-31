@@ -17,7 +17,7 @@ window._boxever_settings = {
 };
 
 function loadScCdpLib(callback) {
-	console.log('Sitecore CDP Tampermonkey script - loadScCdpLib');
+	console.log('Sitecore CDP code repository script - loadScCdpLib');
 	var scriptElement = document.createElement('script');
 	scriptElement.type = 'text/javascript';
 	scriptElement.src = SITECORECDP_JS_LIB_SRC;
@@ -127,7 +127,7 @@ if (ENABLE_KEYBOARD_SHORTCUTS) {
 // CDP
 // *********************************
 function View() {
-	console.log('Sitecore CDP Tampermonkey script - sendViewEvent');
+	console.log('Sitecore CDP code repository script - sendViewEvent');
 	var viewEvent = {
 		"browser_id": Boxever.getID(),
 		"channel": "WEB",
