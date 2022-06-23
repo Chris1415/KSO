@@ -45,6 +45,7 @@ function FunctionsAfterLoad(){
 	AttachToRegistration();
 	AttachToLogin();
 	getLocation();
+	DoTheTrick();
 }
 
  function DoTheTrick(){
