@@ -103,6 +103,22 @@ function savePosition(position) {
 	localStorage["CurrentPositionLng"] = position.coords.longitude;
 }
 
+function GrabCurrentCategory(){
+        var targetUrl = "/at-home";
+        var currentUrl = window.location.href;
+        if(currentUrl.includes(targetUrl) ){
+            console.log("Category match - at-home");
+            return "at-home";
+        }
+        targetUrl = "/at-work";
+        if(currentUrl.includes(targetUrl)){
+            console.log("at-work");
+            return "at-work";
+        }
+
+        return "NONE";
+    }
+
 //keyboard shortcuts
 function KeyPress(e) {
 	var evtobj = window.event ? event : e
@@ -128,6 +144,7 @@ if (ENABLE_KEYBOARD_SHORTCUTS) {
 // *********************************
 function View() {
 	console.log('Sitecore CDP code repository script - sendViewEvent');
+	var category = GrabCurrentCategory();
 	var viewEvent = {
 		"browser_id": Boxever.getID(),
 		"channel": "WEB",
@@ -138,8 +155,13 @@ function View() {
 		"pos": SITECORECDP_POINT_OF_SALE,
 		"session_data": {
 			"uri": window.location.pathname
-		}
+		},
+		 "ext" : {
+            	}
 	};
+	 if(category && category != "NONE"){
+            viewEvent.ext.category = category;
+        }
 	Boxever.eventCreate(viewEvent, function(data) {}, 'json');
 	console.log('view event');
 }
