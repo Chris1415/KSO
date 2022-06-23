@@ -49,7 +49,7 @@ function FunctionsAfterLoad(){
 
  function DoTheTrick(){
 //*** CUSTOM TRICK
-	var targetElements = document.getElementsByClassName(""component container col-xs-12 full-width-promo"");
+	var targetElements = document.getElementsByClassName("component container col-xs-12 full-width-promo");
 	if(targetElements && targetElements[0]){
     		targetElements[0].id = "PersonalizedHeroTeaser";
 	}
